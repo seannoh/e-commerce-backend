@@ -26,9 +26,15 @@ This project is the back end for an e-commerce site built in Node. It uses Expre
 ## Installation
   1. Upload all files or fork this repository to a server with a Node.js runtime environment and a MySQL Server. 
   2. Run `npm -i` from the root directory to install dependencies for this app. 
-  3. From the root directory, open MySQL Shell and run `source ./db/schema.sql;` to create the database.
+  3. Create a `.env` file in the root directory with this format: 
+      ```
+      DB_NAME=ecommerce_db
+      DB_USER=(your user)
+      DB_PASSWORD=(your password)
+      ```
+  4. From the root directory, open MySQL Shell and run `source ./db/schema.sql;` to create the database.
       - Optionally run `npm run seed` to populate the database with sample data.
-  4. Run `npm start` to start the server.
+  5. Run `npm start` to start the server.
   
 ## Usage 
 Run `npm start` to start the server.
@@ -36,15 +42,18 @@ Run `npm start` to start the server.
 Access API endpoints to view, add, update, and delete categories, products and tags.
 
 Categories:
+
 ![categories-preview](./assets/categories-preview.gif)
 
 Products:
+
 ![products-preview](./assets/products-preview.gif)
 
 Tags:
+
 ![tags-preview](./assets/tags-preview.gif)
 
-Link to walkthrough [video]()
+Link to walkthrough [video](https://drive.google.com/file/d/1x8rs_f5j-kVDjvlGiVyZG9n4xVi_V_u3/view?usp=sharing)
 
 ## Credits
 This application was built with the support of the resources and staff of the UCB Full Stack Full Time Coding Bootcamp Summer 2022. 
